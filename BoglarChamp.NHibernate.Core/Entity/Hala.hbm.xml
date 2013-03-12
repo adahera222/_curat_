@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+
+  <class name="BoglarChamp.NHibernate.Core.Entity.Hala, BoglarChamp.NHibernate.Core" table="Hala" >
+
+    <id name="Id" column="IDHala" type="System.Int32" unsaved-value="0">
+      <generator class="native"/>
+    </id>
+
+    <property name="Anulat" column="Anulat" not-null="true" type="System.Boolean"  insert="true" update="true"/>
+    <property name="Denumire" column="Denumire" not-null="true" type="System.String"  length="50" insert="true" update="true"/>
+
+
+  </class>
+</hibernate-mapping>

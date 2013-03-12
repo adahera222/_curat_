@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+
+  <class name="BoglarChamp.NHibernate.Core.Entity.Persoana, BoglarChamp.NHibernate.Core" table="Persoana" >
+
+    <id name="Id" column="IDPersoana" type="System.Int32" unsaved-value="0">
+      <generator class="native"/>
+    </id>
+
+    <property name="Anulat" column="Anulat" not-null="true" type="System.Boolean"  insert="true" update="true"/>
+    <property name="Nume" column="Nume" not-null="true" type="System.String"  length="50" insert="true" update="true"/>
+    <property name="Prenume" column="Prenume" not-null="true" type="System.String"  length="50" insert="true" update="true"/>
+    <property name="Cod" column="Cod" not-null="true" type="System.String"  length="50" insert="true" update="true"/>
+    <property name="Numar" column="Numar" not-null="true" type="System.Int32" insert="true" update="true"/>
+
+    <many-to-one name="Firma"  not-null="true" outer-join="auto" insert="true" update="true">
+      <column name="FirmaID"/>
+    </many-to-one>
+    <many-to-one name="Functie"  not-null="true" outer-join="auto" insert="true" update="true">
+      <column name="FunctieID"/>
+    </many-to-one>
+
+  </class>
+</hibernate-mapping>

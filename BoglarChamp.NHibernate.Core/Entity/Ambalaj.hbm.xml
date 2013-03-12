@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+
+  <import class='BoglarChamp.NHibernate.Core.HalaIMO, BoglarChamp.NHibernate.Core' rename="HalaIMO"/>
+  <import class='BoglarChamp.NHibernate.Core.CelulaIMO, BoglarChamp.NHibernate.Core' rename="CelulaIMO"/>
+  <import class='BoglarChamp.NHibernate.Core.PersoanaIMO, BoglarChamp.NHibernate.Core' rename="PersoanaIMO"/>
+  <import class='BoglarChamp.NHibernate.Core.ScanareIMO, BoglarChamp.NHibernate.Core' rename="ScanareIMO"/>
+  <import class='BoglarChamp.NHibernate.Core.ScanareDetaliiIMO, BoglarChamp.NHibernate.Core' rename="ScanareDetaliiIMO"/>
+  <import class='BoglarChamp.NHibernate.Core.RaportMuncitorIMO, BoglarChamp.NHibernate.Core' rename="RaportMuncitorIMO"/>
+  <import class='BoglarChamp.NHibernate.Core.RaportDetaliiMuncitorIMO, BoglarChamp.NHibernate.Core' rename="RaportDetaliiMuncitorIMO"/>
+  <import class='BoglarChamp.NHibernate.Core.AmbalajIMO, BoglarChamp.NHibernate.Core' rename="AmbalajIMO"/>
+  <import class='BoglarChamp.NHibernate.Core.RaportCumulatMuncitorIMO, BoglarChamp.NHibernate.Core' rename="RaportCumulatMuncitorIMO"/>
+
+  <class name="BoglarChamp.NHibernate.Core.Entity.Ambalaj, BoglarChamp.NHibernate.Core" table="Ambalaj" >
+
+    <id name="Id" column="IDAmbalaj" type="System.Int32" unsaved-value="0">
+      <generator class="native"/>
+    </id>
+
+    <property name="Anulat" column="Anulat" not-null="true" type="System.Boolean"  insert="true" update="true"/>
+    <property name="Denumire" column="Denumire" not-null="true" type="System.String"  length="50" insert="true" update="true"/>
+    <property name="Greutate" column="Greutate" not-null="true" type="System.Decimal"  insert="true" update="true"/>
+
+
+  </class>
+</hibernate-mapping>

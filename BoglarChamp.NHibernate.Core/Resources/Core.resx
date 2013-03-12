@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AvizValidat" xml:space="preserve">
+    <value>Avizul este deja validat!</value>
+  </data>
+  <data name="ClientSetatFiliala" xml:space="preserve">
+    <value>Clientul mai este setat pe alta filiala!</value>
+  </data>
+  <data name="CUIDublat" xml:space="preserve">
+    <value>Mai este o firma cu acelasi CUI!</value>
+  </data>
+  <data name="EroareAcces" xml:space="preserve">
+    <value>Nu aveti acces!</value>
+  </data>
+  <data name="EroareAccesSectiune" xml:space="preserve">
+    <value>Nu aveti drepturi in aceasta sectiune!</value>
+  </data>
+  <data name="EroareAccesZona" xml:space="preserve">
+    <value>Nu aveti acces in aceasta zona!</value>
+  </data>
+  <data name="EroareClientID" xml:space="preserve">
+    <value>Clientul nu are Id sau cod extern!</value>
+  </data>
+  <data name="EroareCodLicenta" xml:space="preserve">
+    <value>Cod licenta gresit!</value>
+  </data>
+  <data name="EroareCUI" xml:space="preserve">
+    <value>Introduceti un CUI valid!</value>
+  </data>
+  <data name="EroareDrepturi" xml:space="preserve">
+    <value>Nu aveti drepturi!</value>
+  </data>
+  <data name="EroareDrepturiAdministrare" xml:space="preserve">
+    <value>Nu aveti drepturi de administrare!</value>
+  </data>
+  <data name="EroareDrepturiAgent" xml:space="preserve">
+    <value>Nu aveti drepturi de agent!</value>
+  </data>
+  <data name="EroareDrepturiManager" xml:space="preserve">
+    <value>Nu aveti drepturi de manager!</value>
+  </data>
+  <data name="EroareFormatareNumeUtilizator" xml:space="preserve">
+    <value>Folositi litere si cifre in nume de utilizator!</value>
+  </data>
+  <data name="EroareFormatareParola" xml:space="preserve">
+    <value>Folositi litere si cifre in parola!</value>
+  </data>
+  <data name="EroareID" xml:space="preserve">
+    <value>ID inexistent</value>
+  </data>
+  <data name="EroareReinitializare" xml:space="preserve">
+    <value>Eroare la reinitalizare!</value>
+  </data>
+  <data name="EroareSalvareDate" xml:space="preserve">
+    <value>Datele nu s-au salvat!</value>
+  </data>
+  <data name="EroareSalvareTarget" xml:space="preserve">
+    <value>Targetul nu poate fi salvat!</value>
+  </data>
+  <data name="EroareSerieChitanta" xml:space="preserve">
+    <value>Seria chitantei nu este buna!</value>
+  </data>
+  <data name="EroareSerieFactura" xml:space="preserve">
+    <value>Seria facturii nu este buna!</value>
+  </data>
+  <data name="EroareStergePozitie" xml:space="preserve">
+    <value>Nu se poate sterge o pozitie din stoc!</value>
+  </data>
+  <data name="EroareStergeUtilizator" xml:space="preserve">
+    <value>Nu se poate sterge un utilizator, eventual anulati-l!</value>
+  </data>
+  <data name="EroareValidareAviz" xml:space="preserve">
+    <value>Avizul nu se poate valida fara pozitii!</value>
+  </data>
+  <data name="FirmaBlocata" xml:space="preserve">
+    <value>Firma blocata! Contactati firma QUALTEH!</value>
+  </data>
+  <data name="FirmaDublata" xml:space="preserve">
+    <value>Mai este o firma cu aceeasi denumire!</value>
+  </data>
+  <data name="IncorrectEmail" xml:space="preserve">
+    <value>Mail incorect, sau casuta de mail indisponibila!</value>
+  </data>
+  <data name="InvalidEmailOferta" xml:space="preserve">
+    <value>Mailul este invalid pe oferta {0}: email= {1}</value>
+  </data>
+  <data name="InvalidEmailPersoana" xml:space="preserve">
+    <value>Mailul este invalid pe oferta {0}: email persoana contact= {1}</value>
+  </data>
+  <data name="InvalidEmailuriOferta" xml:space="preserve">
+    <value>Mailurile sunt invalide pe oferta {0}: email= {1}; email persoana contact= {2}</value>
+  </data>
+  <data name="LipsaAgent" xml:space="preserve">
+    <value>Nu aveti agenti setati!</value>
+  </data>
+  <data name="LipsaAgent1" xml:space="preserve">
+    <value>Selectati un agent!</value>
+  </data>
+  <data name="LipsaAutentificare" xml:space="preserve">
+    <value>Nu sunteti autentificat!</value>
+  </data>
+  <data name="LipsaAutentificare1" xml:space="preserve">
+    <value>Trebuie sa va autentificati!</value>
+  </data>
+  <data name="LipsaBI" xml:space="preserve">
+    <value>Introduceti un Buletin de Identitate sau Carte de Identitate!</value>
+  </data>
+  <data name="LipsaCategorieClienti" xml:space="preserve">
+    <value>Nu aveti categorie de clienti!</value>
+  </data>
+  <data name="LipsaCNP" xml:space="preserve">
+    <value>Introduceti un CNP!</value>
+  </data>
+  <data name="LipsaCodClient" xml:space="preserve">
+    <value>Nu exista clientul cu codul: {0}</value>
+  </data>
+  <data name="LipsaComandaID" xml:space="preserve">
+    <value>Nu exista comanda cu Id {0}</value>
+  </data>
+  <data name="LipsaDenumireFirma" xml:space="preserve">
+    <value>Introduceti denumirea firmei!</value>
+  </data>
+  <data name="LipsaDocumentPlataID" xml:space="preserve">
+    <value>Nu exista document plata cu id {0}</value>
+  </data>
+  <data name="LipsaEmail" xml:space="preserve">
+    <value>Introduceti un email!</value>
+  </data>
+  <data name="LipsaFirma" xml:space="preserve">
+    <value>Nu este setata firma!!!</value>
+  </data>
+  <data name="LipsaGestiune" xml:space="preserve">
+    <value>Selectati o gestiune!</value>
+  </data>
+  <data name="LipsaGrupaDiscounturi" xml:space="preserve">
+    <value>Selectati o grupa de discounturi client!</value>
+  </data>
+  <data name="LipsaGrupeProduse" xml:space="preserve">
+    <value>Nu aveti grupe de produse!</value>
+  </data>
+  <data name="LipsaListaPret" xml:space="preserve">
+    <value>Selectati o lista de pret!</value>
+  </data>
+  <data name="LipsaMembru" xml:space="preserve">
+    <value>Nu ati specificat numele membrului testat</value>
+  </data>
+  <data name="LipsaMembru1" xml:space="preserve">
+    <value>Membrul specificat ({0}) nu exista!</value>
+  </data>
+  <data name="LipsaNume" xml:space="preserve">
+    <value>Introduceti un nume!</value>
+  </data>
+  <data name="LipsaNumeParametru" xml:space="preserve">
+    <value>Nu ati specificat numele parametrului</value>
+  </data>
+  <data name="LipsaNumeUtilizator" xml:space="preserve">
+    <value>Introduceti un nume de utilizator!</value>
+  </data>
+  <data name="LipsaParola" xml:space="preserve">
+    <value>Introduceti o parola!</value>
+  </data>
+  <data name="LipsaPrenume" xml:space="preserve">
+    <value>Introduceti un prenume!</value>
+  </data>
+  <data name="LipsaProdus" xml:space="preserve">
+    <value>Nu exista produsul cu codul {0}</value>
+  </data>
+  <data name="LipsaProdus1" xml:space="preserve">
+    <value>Selectati un produs!</value>
+  </data>
+  <data name="LipsaProdusID" xml:space="preserve">
+    <value>Produsul nu are ID sau cod extern/simbol!</value>
+  </data>
+  <data name="LipsaSuma" xml:space="preserve">
+    <value>Introduceti o suma!</value>
+  </data>
+  <data name="LipsaTelefon" xml:space="preserve">
+    <value>Introduceti un numar de telefon!</value>
+  </data>
+  <data name="LipsaTelefonAgent" xml:space="preserve">
+    <value>Agentul {0} nu are telefon setat!</value>
+  </data>
+  <data name="LipsaValoareParametru" xml:space="preserve">
+    <value>Nu ati specificat valoarea parametrului</value>
+  </data>
+  <data name="LipsaZona" xml:space="preserve">
+    <value>Selectati o zona!</value>
+  </data>
+  <data name="NumarChitantaMaiMareLimita" xml:space="preserve">
+    <value>Numarul chitantei este mai mare decat limita maxima!</value>
+  </data>
+  <data name="NumarChitantaMaiMicCurent" xml:space="preserve">
+    <value>Numarul chitantei mai mic sau egal cu numarul curent inregistrat pentru aceasta serie!</value>
+  </data>
+  <data name="NumarChitantaMaiMicLimita" xml:space="preserve">
+    <value>Numarul chitantei este mai mic decat limita minima!</value>
+  </data>
+  <data name="NumarFacturaMaiMareLimita" xml:space="preserve">
+    <value>Numarul facturii este mai mare decat limita maxima!</value>
+  </data>
+  <data name="NumarFacturaMaiMicCurent" xml:space="preserve">
+    <value>Numarul facturii mai mic sau egal cu numarul curent inregistrat pentru aceasta serie!</value>
+  </data>
+  <data name="NumarFacturaMaiMicLimita" xml:space="preserve">
+    <value>Numarul facturii este mai mic decat limita minima!</value>
+  </data>
+  <data name="ProdusLipsaGestiune" xml:space="preserve">
+    <value>Operatie interzisa, produsul nu este pe gestiune!</value>
+  </data>
+  <data name="TelefonBlocat" xml:space="preserve">
+    <value>Telefon blocat. Contactati firma QUALTEH!</value>
+  </data>
+  <data name="TelefonBlocatSediu" xml:space="preserve">
+    <value>Telefonul a fost blocat de la sediu!</value>
+  </data>
+  <data name="TelefonInregistrat" xml:space="preserve">
+    <value>Telefon inregistrat pe alta firma. Contactati firma QUALTEH!</value>
+  </data>
+  <data name="UtilizatorAnulat" xml:space="preserve">
+    <value>Utilizatorul este anulat!</value>
+  </data>
+  <data name="UtilizatorDublat" xml:space="preserve">
+    <value>Mai aveti un utilizator cu aceleasi date de autentificare: {0}!</value>
+  </data>
+  <data name="UtilizatorInexistent" xml:space="preserve">
+    <value>Utilizator inexistent! {0}</value>
+  </data>
+  <data name="AvizDetaliuDublat" xml:space="preserve">
+    <value>Mai aveti un produs cu acelasi lot pe aviz!</value>
+  </data>
+  <data name="AvizDublat" xml:space="preserve">
+    <value>Mai aveti un aviz cu aceeasi serie si numar:{0}</value>
+  </data>
+  <data name="CampanieDublata" xml:space="preserve">
+    <value>Mai aveti o campanie cu aceeasi denumire</value>
+  </data>
+  <data name="CategorieClientDublata" xml:space="preserve">
+    <value>Mai aveti o grupa client cu aceeasi denumire</value>
+  </data>
+  <data name="ClientPunctLucruAdresaDublat" xml:space="preserve">
+    <value>Mai aveti un punct de lucru cu aceasta adresa!</value>
+  </data>
+  <data name="ClientPunctLucruCodExternDublat" xml:space="preserve">
+    <value>Mai aveti un client cu acelasi cod extern!</value>
+  </data>
+  <data name="ClientPunctLucruCodFiscalDublat" xml:space="preserve">
+    <value>Mai aveti un client cu acelasi cod fiscal!</value>
+  </data>
+  <data name="ClientPunctLucruCodInternDublat" xml:space="preserve">
+    <value>Mai aveti un client cu acelasi cod intern!</value>
+  </data>
+  <data name="ComandaDublata" xml:space="preserve">
+    <value>Mai aveti o comanda cu acelasi: client, data, agent, valoare!</value>
+  </data>
+  <data name="DiscountDublat" xml:space="preserve">
+    <value>Mai aveti un detaliu de grupa preturi client cu acelasi produs!</value>
+  </data>
+  <data name="DocumentPlataDublat" xml:space="preserve">
+    <value>Mai aveti un document plata cu aceeasi serie si numar!</value>
+  </data>
+  <data name="EroareAdaugarePozitieAvizAnulat" xml:space="preserve">
+    <value>Nu puteti adauga pozitia, avizul a este anulat!</value>
+  </data>
+  <data name="EroareAdaugarePozitieAvizPreluat" xml:space="preserve">
+    <value>Nu puteti adauga pozitia, avizul a fost preluat pe telefon!</value>
+  </data>
+  <data name="EroareAdaugarePozitieAvizValidat" xml:space="preserve">
+    <value>Nu puteti adauga pozitia, avizul este validat!</value>
+  </data>
+  <data name="EroareAnulareAviz" xml:space="preserve">
+    <value>Nu se poate anula avizul dupa validare!</value>
+  </data>
+  <data name="EroareAnulareCampanie" xml:space="preserve">
+    <value>Aveti {0} clienti pe aceasta campanie! Va rugam realocati clientii pe alta campanie sau scoateti campania de pe clienti inainte de anulare!</value>
+  </data>
+  <data name="EroareAnulareCategorieClient" xml:space="preserve">
+    <value>Aveti {0} clienti pe aceasta categorie! Va rugam realocati clientii pe alta categorie inainte de anulare!</value>
+  </data>
+  <data name="EroareAnulareGrupa" xml:space="preserve">
+    <value>Aveti {0} produse pe aceasta grupa! Va rugam realocati produsele pe alta grupa inainte de anulare</value>
+  </data>
+  <data name="EroareAnulareGrupaDiscounturiClienti" xml:space="preserve">
+    <value>Aveti {0} clienti pe aceasta grupa de discounturi! Va rugam realocati clientii pe alta grupa de discounturi sau stergeti grupa de discounturi de pe client inainte de anulare.</value>
+  </data>
+  <data name="EroareAnulareGrupaDiscounturiProduse" xml:space="preserve">
+    <value>Aveti {0} produse pe aceasta grupa de discounturi! Va rugam realocati produsele pe alta grupa de discounturi sau stergeti grupa de discounturi de pe produs inainte de anulare.</value>
+  </data>
+  <data name="EroareAnulareGrupaPreturiClient" xml:space="preserve">
+    <value>Aveti {0} clienti pe aceasta grupa de pret! Va rugam realocati clientii pe alta grupa de pret sau stergeti grupa de pret de pe client inainte de anulare</value>
+  </data>
+  <data name="EroareAvizAnulat" xml:space="preserve">
+    <value>Nu puteti face nici o operatie, avizul este anulat!</value>
+  </data>
+  <data name="EroareCNP" xml:space="preserve">
+    <value>CNP incorect!</value>
+  </data>
+  <data name="EroareCodFiscal" xml:space="preserve">
+    <value>Cod fiscal incorect!</value>
+  </data>
+  <data name="EroareConfirmareAviz" xml:space="preserve">
+    <value>Nu se poate confirma de primire pe telefon, avizul este in editare!</value>
+  </data>
+  <data name="EroareDrepturiAviz" xml:space="preserve">
+    <value>Nu aveti drepturi sa intrati aici!</value>
+  </data>
+  <data name="EroareFormatCUI" xml:space="preserve">
+    <value>Format incorect la cod fiscal!</value>
+  </data>
+  <data name="EroareLimitaMinimaAviz" xml:space="preserve">
+    <value>Limita minima la aviz e mai mare decat limita maxima!</value>
+  </data>
+  <data name="EroareLimitaMinimaChitanta" xml:space="preserve">
+    <value>Limita minima la chitanta e mai mare decat limita maxima!</value>
+  </data>
+  <data name="EroareLimitaMinimaFactura" xml:space="preserve">
+    <value>Limita minima la factura e mai mare decat limita maxima!</value>
+  </data>
+  <data name="EroareNecunoscuta" xml:space="preserve">
+    <value>Eroare Necunoscuta</value>
+  </data>
+  <data name="EroareStergeAviz" xml:space="preserve">
+    <value>Nu se poate sterge un aviz!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereCampanie" xml:space="preserve">
+    <value>Nu se poate sterge o campanie!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereCategorieClient" xml:space="preserve">
+    <value>Nu se poate sterge o categorie de client!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereClient" xml:space="preserve">
+    <value>Nu se poate sterge un client!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereComanda" xml:space="preserve">
+    <value>Nu se poate sterge o comanda!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereDocumentPlata" xml:space="preserve">
+    <value>Nu aveti voie sa stergeti un document de plata!</value>
+  </data>
+  <data name="EroareStergereGestiuni" xml:space="preserve">
+    <value>Nu se poate sterge o gestiune!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereGrupa" xml:space="preserve">
+    <value>Nu se poate sterge o grupa!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereGrupaDiscount" xml:space="preserve">
+    <value>Nu se poate sterge o grupa de discounturi!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereGrupaPret" xml:space="preserve">
+    <value>Nu se poate sterge o grupa de pret!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereMotiv" xml:space="preserve">
+    <value>Nu se poate sterge un motiv!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereOferta" xml:space="preserve">
+    <value>Nu se poate sterge o oferta!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergerePozitieAvizAnulat" xml:space="preserve">
+    <value>Nu puteti sterge pozitia, avizul a este anulat!</value>
+  </data>
+  <data name="EroareStergerePozitieAvizPreluat" xml:space="preserve">
+    <value>Nu puteti sterge pozitia, avizul a fost preluat pe telefon!</value>
+  </data>
+  <data name="EroareStergerePozitieAvizValidat" xml:space="preserve">
+    <value>Nu puteti sterge pozitia, avizul este validat!</value>
+  </data>
+  <data name="EroareStergereProducator" xml:space="preserve">
+    <value>Nu se poate sterge un producator!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereProdus" xml:space="preserve">
+    <value>Nu se poate sterge un produs!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereRuta" xml:space="preserve">
+    <value>Nu se poate sterge o ruta!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereSerie" xml:space="preserve">
+    <value>Nu se poate sterge o serie!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereSubgrupa" xml:space="preserve">
+    <value>Nu se poate sterge o subgrupa!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereSubsubgrupa" xml:space="preserve">
+    <value>Nu se poate sterge o sub-subgrupa!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereTelefon" xml:space="preserve">
+    <value>Nu se poate sterge un telefon!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereUM" xml:space="preserve">
+    <value>Nu se poate sterge o unitate de masura!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="EroareStergereZona" xml:space="preserve">
+    <value>Nu se poate sterge o zona!!! Eventual se anuleaza!</value>
+  </data>
+  <data name="GestiuneDublata" xml:space="preserve">
+    <value>Mai aveti o gestiune cu aceeasi denumire!</value>
+  </data>
+  <data name="GrupaDiscountProdusDublat" xml:space="preserve">
+    <value>Mai aveti o grupa de discounturi produs cu aceeasi denumire!</value>
+  </data>
+  <data name="GrupaDiscounturiClientiDublat" xml:space="preserve">
+    <value>Mai aveti o grupa de discounturi cu aceeasi denumire!</value>
+  </data>
+  <data name="GrupaDublata" xml:space="preserve">
+    <value>Mai aveti o grupa cu aceeasi denumire!</value>
+  </data>
+  <data name="GrupaPreturiClientDublata" xml:space="preserve">
+    <value>Mai exista o grupa de preturi cu aceeasi denumire!</value>
+  </data>
+  <data name="LipsaAviz" xml:space="preserve">
+    <value>Selectati un aviz!</value>
+  </data>
+  <data name="LipsaCantitate" xml:space="preserve">
+    <value>Introduceti o cantitate!</value>
+  </data>
+  <data name="LipsaCategorieClient" xml:space="preserve">
+    <value>Selectati o categorie de client!</value>
+  </data>
+  <data name="LipsaClientOferta" xml:space="preserve">
+    <value>Selectati un client pe oferta!</value>
+  </data>
+  <data name="LipsaClientPeComanda" xml:space="preserve">
+    <value>Selectati un client pe comanda!</value>
+  </data>
+  <data name="LipsaContinutMesaj" xml:space="preserve">
+    <value>Introduceti un continut!</value>
+  </data>
+  <data name="LipsaCUI" xml:space="preserve">
+    <value>Introduceti un CUI la client!</value>
+  </data>
+  <data name="LipsaDenumireCampanie" xml:space="preserve">
+    <value>Introduceti o denumire la campanie!</value>
+  </data>
+  <data name="LipsaDenumireCategorieClient" xml:space="preserve">
+    <value>Introduceti o denumire la categorie de client!</value>
+  </data>
+  <data name="LipsaDenumireClient" xml:space="preserve">
+    <value>Introduceti o denumire la client!</value>
+  </data>
+  <data name="LipsaDenumireGestiune" xml:space="preserve">
+    <value>Introduceti o denumire la gestiune!</value>
+  </data>
+  <data name="LipsaDenumireGrupa" xml:space="preserve">
+    <value>Introduceti o denumire la grupa!</value>
+  </data>
+  <data name="LipsaDenumireGrupaDiscount" xml:space="preserve">
+    <value>Introduceti o denumire la grupa de discounturi!</value>
+  </data>
+  <data name="LipsaDenumireGrupaPret" xml:space="preserve">
+    <value>Introduceti o denumire la grupa de pret!</value>
+  </data>
+  <data name="LipsaDenumireMotiv" xml:space="preserve">
+    <value>Introduceti o denumire la motiv!</value>
+  </data>
+  <data name="LipsaDenumireProducator" xml:space="preserve">
+    <value>Introduceti o denumire la producator!</value>
+  </data>
+  <data name="LipsaDenumireProdus" xml:space="preserve">
+    <value>Introduceti o denumire la produs!</value>
+  </data>
+  <data name="LipsaDenumireSubgrupa" xml:space="preserve">
+    <value>Introduceti o denumire la subgrupa!</value>
+  </data>
+  <data name="LipsaDenumireSubsubgrupa" xml:space="preserve">
+    <value>Introduceti o denumire la sub-subgrupa!</value>
+  </data>
+  <data name="LipsaDenumireUMValabilitate" xml:space="preserve">
+    <value>Introduceti o denumire la unitate de masura a valabilitatii!</value>
+  </data>
+  <data name="LipsaDenumireZona" xml:space="preserve">
+    <value>Introduceti o denumire la zona!</value>
+  </data>
+  <data name="LipsaDenumirUM" xml:space="preserve">
+    <value>Introduceti o denumire la unitate de masura!</value>
+  </data>
+  <data name="LipsaDestinatarMesaj" xml:space="preserve">
+    <value>Introduceti un destinatar!</value>
+  </data>
+  <data name="LipsaExpeditor" xml:space="preserve">
+    <value>Introduceti un expeditor!</value>
+  </data>
+  <data name="LipsaGramaj" xml:space="preserve">
+    <value>Selectati un gramaj si o unitate de masura pentru gramaj sau stergetile pe amandoua!</value>
+  </data>
+  <data name="LipsaGrupaProdus" xml:space="preserve">
+    <value>Selectati o grupa pentru produs!</value>
+  </data>
+  <data name="LipsaIMEI" xml:space="preserve">
+    <value>Introduceti un IMEI!</value>
+  </data>
+  <data name="LipsaNrTelefon" xml:space="preserve">
+    <value>Introduceti un numar de telefon!</value>
+  </data>
+  <data name="LipsaNumarAviz" xml:space="preserve">
+    <value>Introduceti un numar la aviz!</value>
+  </data>
+  <data name="LipsaNumeRuta" xml:space="preserve">
+    <value>Introduceti un nume de ruta!</value>
+  </data>
+  <data name="LipsaPretClient" xml:space="preserve">
+    <value>Selectati o lista de pret pe client!</value>
+  </data>
+  <data name="LipsaProduseComanda" xml:space="preserve">
+    <value>Nu aveti produse pe comanda!</value>
+  </data>
+  <data name="LipsaProduseOferta" xml:space="preserve">
+    <value>Nu aveti produse pe oferta!</value>
+  </data>
+  <data name="LipsaSerieAviz" xml:space="preserve">
+    <value>Introduceti o serie la aviz!</value>
+  </data>
+  <data name="LipsaSubiectMesaj" xml:space="preserve">
+    <value>Introduceti un subiect!</value>
+  </data>
+  <data name="LipsaTelefon1" xml:space="preserve">
+    <value>Selectati un telefon!</value>
+  </data>
+  <data name="LipsaUM" xml:space="preserve">
+    <value>Selectati o unitate de masura!</value>
+  </data>
+  <data name="LipsaUMProdus" xml:space="preserve">
+    <value>Selectati o unitate de masura pentru produs!</value>
+  </data>
+  <data name="LipsaUtilizator" xml:space="preserve">
+    <value>Selectati un utilizator!</value>
+  </data>
+  <data name="LipsaUtilizatorOferta" xml:space="preserve">
+    <value>Selectati un utilizator pe oferta!</value>
+  </data>
+  <data name="LipsaUtilizatorPeComanda" xml:space="preserve">
+    <value>Selectati un utilizator pe comanda!</value>
+  </data>
+  <data name="LipsaValabilitate" xml:space="preserve">
+    <value>Selectati o valabilitate si o unitate de masura pentru valabilitate sau stergetile pe amandoua!</value>
+  </data>
+  <data name="LipsaZonaClient" xml:space="preserve">
+    <value>Selectati o zona pe client!</value>
+  </data>
+  <data name="MotivDublat" xml:space="preserve">
+    <value>Mai aveti un motiv cu aceeasi denumire!</value>
+  </data>
+  <data name="NrClientiZona" xml:space="preserve">
+    <value>Aveti {0} clienti pe aceasta zona! Va rugam realocati clientii pe alta zona inainte de anulare.</value>
+  </data>
+  <data name="NrProduseGramaj" xml:space="preserve">
+    <value>Aveti {0} produse pe aceasta unitate de masura la gramaj! Va rugam realocati produsele pe alta unitate de masura inainte de anulare</value>
+  </data>
+  <data name="NrProduseSubgrupa" xml:space="preserve">
+    <value>Aveti {0} produse pe aceasta subgrupa! Va rugam realocati produsele pe alta subgrupa inainte de anulare</value>
+  </data>
+  <data name="NrProduseSubsubgrupa" xml:space="preserve">
+    <value>Aveti {0} produse pe aceasta subsubgrupa! Va rugam realocati produsele pe alta subsubgrupa inainte de anulare</value>
+  </data>
+  <data name="NrProduseUM" xml:space="preserve">
+    <value>Aveti {0} produse pe aceasta unitate de masura! Va rugam realocati produsele pe alta unitate de masura inainte de anulare</value>
+  </data>
+  <data name="NrProduseUMValabilitate" xml:space="preserve">
+    <value>Aveti {0} produse pe aceasta unitate de masura a valabilitatii! Va rugam realocati produsele pe alta unitate de masura a valabilitatii inainte de anulare</value>
+  </data>
+  <data name="PretDublat" xml:space="preserve">
+    <value>Mai exista un pret identic!</value>
+  </data>
+  <data name="ProducatorDublat" xml:space="preserve">
+    <value>Mai exista un producator cu aceeasi denumire!</value>
+  </data>
+  <data name="ProdusDublat" xml:space="preserve">
+    <value>Mai exista un produs cu aceeasi denumire!</value>
+  </data>
+  <data name="RutaDublata" xml:space="preserve">
+    <value>Mai exista o ruta cu aceeasi denumire!</value>
+  </data>
+  <data name="SerieAvizDublat" xml:space="preserve">
+    <value>Mai aveti seria de aviz {0} cu aceleasi limite!</value>
+  </data>
+  <data name="StocDublat" xml:space="preserve">
+    <value>Mai exista stocul!</value>
+  </data>
+  <data name="SubgrupaDublata" xml:space="preserve">
+    <value>Mai exista o subgrupa cu aceeasi denumire</value>
+  </data>
+  <data name="SubsubgrupaDublata" xml:space="preserve">
+    <value>Mai exista o subsubgrupa cu aceeasi denumire!</value>
+  </data>
+  <data name="TelefonAgentiDublat" xml:space="preserve">
+    <value>Mai aveti agentul {0} pe telefonul {1}!</value>
+  </data>
+  <data name="TelefonDublat" xml:space="preserve">
+    <value>Mai exista acelasi telefon!</value>
+  </data>
+  <data name="UMDublat" xml:space="preserve">
+    <value>Mai exista o UM cu aceeasi denumire!</value>
+  </data>
+  <data name="UMValabilitateDublat" xml:space="preserve">
+    <value>Mai exista o UM valabilitate cu aceeasi denumire!</value>
+  </data>
+  <data name="UtilizatorDublat1" xml:space="preserve">
+    <value>Mai exista un angajat cu acelasi nume, prenume si CNP!</value>
+  </data>
+  <data name="UtilizatorZonaDublat" xml:space="preserve">
+    <value>Mai aveti zona {0} definita pe managerul {1}!</value>
+  </data>
+  <data name="ZonaDublata" xml:space="preserve">
+    <value>Mai exista o zona cu aceeasi denumire!</value>
+  </data>
+  <data name="EroareStergeUtilizatorZone" xml:space="preserve">
+    <value>Aveti {0} agenti in subordine, nu puteti sterge accesul pe zona {1}!</value>
+  </data>
+  <data name="ProdusCodExternDublat" xml:space="preserve">
+    <value>Mai exista un produs cu acelasi cod extern!</value>
+  </data>
+  <data name="ProdusCodIntenDublat" xml:space="preserve">
+    <value>Mai exista un produs cu acelasi cod intern!</value>
+  </data>
+  <data name="SerieChitantaDublat" xml:space="preserve">
+    <value>Mai aveti seria de chitanta {0} cu aceleasi limite!</value>
+  </data>
+  <data name="SerieFacturaDublat" xml:space="preserve">
+    <value>Mai aveti seria de factura {0} cu aceleasi limite!</value>
+  </data>
+  <data name="Oferta" xml:space="preserve">
+    <value>Oferta</value>
+  </data>
+  <data name="OfertaBodyMail" xml:space="preserve">
+    <value>&lt;b&gt;Buna ziua,&lt;/b&gt;&lt;BR&gt;
+&lt;BR&gt;
+&lt;b&gt;Conform discutiei, atasat va trimit oferta &lt;/b&gt;&lt;BR&gt;
+&lt;BR&gt;
+&lt;BR&gt;
+&lt;BR&gt;
+Al dumneavoastra,
+&lt;BR&gt;
+{0}&lt;BR&gt;
+{1}&lt;BR&gt;
+{2}&lt;BR&gt;
+{3}&lt;BR&gt;</value>
+  </data>
+  <data name="DenumireUMValabilitatePreaMare" xml:space="preserve">
+    <value>Unitatea de masura a valabilitatii depaseste 10 caractere!</value>
+  </data>
+  <data name="EroareAnulareDivizie" xml:space="preserve">
+    <value>Aveti {0} produse pe aceasta divizie! Va rugam realocati produsele pe alta divizie inainte de anulare</value>
+  </data>
+  <data name="TotiAgentii" xml:space="preserve">
+    <value>Toti agentii</value>
+  </data>
+  <data name="CodSetInexistent" xml:space="preserve">
+    <value>Cod set inexistent, importati produsele</value>
+  </data>
+  <data name="DataInceput" xml:space="preserve">
+    <value>Data de inceput trebuie sa fie 1 a lunii!</value>
+  </data>
+  <data name="DataSfarsit" xml:space="preserve">
+    <value>Data de sfarsit trebuie sa fie la {0} a lunii!</value>
+  </data>
+  <data name="GestiuneInexistenta" xml:space="preserve">
+    <value>Gestiunea {0} nu exista in sistem!</value>
+  </data>
+  <data name="LipsaConexiune" xml:space="preserve">
+    <value>Lipsa conexiune baza date!</value>
+  </data>
+  <data name="DivizieDublata" xml:space="preserve">
+    <value>Mai aveti o divizie cu aceasi denumire!</value>
+  </data>
+  <data name="EroareDivizieImplicita" xml:space="preserve">
+    <value>Nu puteti anula o divizie implicita!</value>
+  </data>
+  <data name="EroareStergereDivizie" xml:space="preserve">
+    <value>Divizia nu poate fi stearsa!</value>
+  </data>
+  <data name="LipsaDenumireDivizie" xml:space="preserve">
+    <value>Introduceti o denumire la divizie!</value>
+  </data>
+  <data name="TemplateVerificareClient" xml:space="preserve">
+    <value>Raport vizite si sold client
+
+--------------------------------------------------------
+
+{0}
+
+{1}
+
+{2}
+
+{3}
+
+--------------------------------------------------------
+
+sold punct de lucru: {4}
+sold total: {5}
+
+--------------------------------------------------------
+
+{6}
+
+--------------------------------------------------------
+
+Ultimele 10 vizite:
+{7}
+--------------------------------------------------------</value>
+  </data>
+  <data name="TemplateVerificareClientComanda" xml:space="preserve">
+    <value>Comanda</value>
+  </data>
+  <data name="TemplateVerificareClientDetaliu" xml:space="preserve">
+    <value>{0} {1}
+{2}
+{3} {4} {5}  {6} {7} {8}</value>
+  </data>
+  <data name="TemplateVerificareClientIncasare" xml:space="preserve">
+    <value>Incasare</value>
+  </data>
+  <data name="InvalidEmailRegister" xml:space="preserve">
+    <value>Email invalid!</value>
+  </data>
+  <data name="SendEmailRegister" xml:space="preserve">
+    <value>Bine ati venit!</value>
+  </data>
+  <data name="SendEmailSubject" xml:space="preserve">
+    <value>Va multumim!</value>
+  </data>
+</root>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+
+  <class name="BoglarChamp.NHibernate.Core.Entity.Scanare, BoglarChamp.NHibernate.Core" table="Scanare" >
+
+    <id name="Id" column="IDScanare" type="System.Int32" unsaved-value="0">
+      <generator class="native"/>
+    </id>
+
+    <property name="DataScanare" column="DataScanare" not-null="true" type="System.DateTime"  insert="true" update="true"/>
+    <property name="Cantitate" column="Cantitate" not-null="false" type="System.Int32"  insert="true" update="true"/>
+    <property name="Greutate" column="Greutate" not-null="true" type="System.Decimal"  insert="true" update="true"/>
+
+    <many-to-one name="Sef"  not-null="true" outer-join="auto" insert="true" update="true">
+      <column name="SefID"/>
+    </many-to-one>
+    <many-to-one name="Muncitor"  not-null="true" outer-join="auto" insert="true" update="true">
+      <column name="MuncitorID"/>
+    </many-to-one>
+    <many-to-one name="Hala"  not-null="true" outer-join="auto" insert="true" update="true">
+      <column name="HalaID"/>
+    </many-to-one>
+    <many-to-one name="Celula"  not-null="true" outer-join="auto" insert="true" update="true">
+      <column name="CelulaID"/>
+    </many-to-one>
+    <many-to-one name="Ambalaj"  not-null="true" outer-join="auto" insert="true" update="true">
+      <column name="AmbalajID"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>
